@@ -166,6 +166,7 @@ public class Main {
         }
 
         FileWriter writer = new FileWriter(oFile.getAbsolutePath());
+        writer.write("<! -- https://github.com/amohacker/html-table-from-csv-generator --> \n");
         if (scripts==true){
             writer.write("<script src=\"https://code.jquery.com/jquery-3.5.1.js\"></script>\n" +
                     "<script src=\"https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js\"></script>\n" +
